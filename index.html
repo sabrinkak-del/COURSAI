@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COURSIL - ללמוד AI ברמה אחרת</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Assistant:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <div class="scroll-progress"></div>
+  <div id="app">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">COURS<span>IL</span></div>
+        <ul class="nav-links">
+          <li><a href="#courses">קורסים</a></li>
+          <li><a href="#about">אודות</a></li>
+          <li><a href="#contact">צור קשר</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button id="loginBtn" class="btn btn-outline">כניסה</button>
+          <button id="signupBtn" class="btn btn-primary">הרשמה</button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <h1>שלוט בעתיד עם <span class="glow-text">בינה מלאכותית</span></h1>
+        <p>הצטרפו לקהילת הלמידה המובילה בישראל ל-AI. מהיסודות ועד לכלים המתקדמים ביותר.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary btn-lg">התחל ללמוד עכשיו</a>
+          <a href="#courses" class="btn btn-outline btn-lg">צפה בסילבוס</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glow-circle"></div>
+      </div>
+    </header>
+
+    <section id="courses" class="courses">
+      <div class="container">
+        <h2 class="section-title">הקורסים שלנו</h2>
+        <div class="course-grid">
+          <div class="course-card">
+            <div class="card-img"
+              style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800')">
+            </div>
+            <div class="card-body">
+              <h3>Prompt Engineering</h3>
+              <p>למד איך לדבר עם מודלי שפה ולקבל תוצאות מדהימות ולהפיק את המקסימום מ-ChatGPT.</p>
+              <button class="btn btn-sm btn-primary">לפרטים נוספים</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="card-img"
+              style="background-image: url('https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&q=80&w=800')">
+            </div>
+            <div class="card-body">
+              <h3>Mastering LLMs</h3>
+              <p>העמקה לעולם ה-ChatGPT, Claude ו-Gemini ברמה מקצועית ובניית אפליקציות.</p>
+              <button class="btn btn-sm btn-primary">לפרטים נוספים</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="card-img"
+              style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800')">
+            </div>
+            <div class="card-body">
+              <h3>AI Art & Design</h3>
+              <p>יצירת אמנות ועיצוב באמצעות Midjourney ו-Stable Diffusion בצורה מקצועית.</p>
+              <button class="btn btn-sm btn-primary">לפרטים נוספים</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <div class="logo">COURS<span>IL</span></div>
+            <p>השער שלך לעולם הבינה המלאכותית. למידה מותאמת אישית וכלים מתקדמים.</p>
+          </div>
+          <div class="footer-contact">
+            <h4>פרטי התקשרות</h4>
+            <div class="contact-item">📧 <span>אימייל: contact@coursil.ai</span></div>
+            <div class="contact-item">📞 <span>טלפון: 050-1234567</span></div>
+            <div class="contact-item">📍 <span>מיקום: ישראל</span></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 COURSIL. כל הזכויות שמורות.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div id="authModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="authFormContainer"></div>
+      </div>
+    </div>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+
+</html>
